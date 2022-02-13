@@ -4,6 +4,8 @@ my updated dotfiles using wal.
 
 > programs
 
+*see [INFO.md]()*
+
 > screenshot
 
 ![Image](https://files.catbox.moe/0epnns.png)
