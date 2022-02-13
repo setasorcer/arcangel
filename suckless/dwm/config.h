@@ -39,7 +39,7 @@ static const Rule rules[] = {
 	/* class      instance    title       tags mask     isfloating   floatpos   monitor */
 	{ "Gimp",     NULL,       NULL,       1<<1,         1,  	NULL,       -1 },
 	{ "Steam",    NULL,	  NULL,	      1<<3,	    1,		NULL,	     1 },
-	{ NULL,       NULL,       "ncmpc",    ~0,	    1,		"88% 90% 600W 189H", 1 },
+	{ NULL,       NULL,       "ncmpc",    ~0,	    1,		"88% 90% 600W 188H", 1 },
 	{ "Pale moon","Browser",  "Pale Moon Preferences",  0, 1,	NULL, 	    -1 },
 	{ "Waterfox",  "Toolkit", NULL,       -0, 	    1, 		"100% 100%", 1 },
 };
@@ -71,7 +71,6 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, "-h", "30", NULL };
 static const char *passmenu[] = { "passmenu" , "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, "-h", "30", NULL };
-static const char *ytsdmenu[] = { "yts"	     , "-r", NULL };
 static const char *termcmd[]  = { "urxvtc", NULL };
 // volume
 static const char *upvol[]   = { "amixer", "-q", "set", "Master", "5%+", "unmute", NULL };
@@ -92,7 +91,7 @@ static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_d,      spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,		XK_d,	   spawn,	   {.v = passmenu } },
-	{ MODKEY|ControlMask,		XK_d,	   spawn,	   {.v = ytsdmenu } },
+	{ MODKEY|ControlMask,		XK_d,	   spawn,	   SHCMD(TERMINAL2 " -e ytfzf -t") },
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = +1 } },
@@ -124,7 +123,7 @@ static Key keys[] = {
 	{ MODKEY,			XK_F3,	   spawn,	   { .v = steam   } },
 
 	{ MODKEY,			XK_F9,	   spawn,	   SHCMD(TERMINAL " -e tremc") },
-	{ MODKEY,			XK_F10,	   spawn,	   SHCMD(TERMINAL2 " -title ncmpc -e tmux new \"tmux set -g status off && tmux set-option destroy-unattached on && ncmpcpp\" ';' split -h -d \"tmux resize-pane -R 20; ./.scripts/tools/albumart-ueber.bash\"") },
+	{ MODKEY,			XK_F10,	   spawn,	   SHCMD(TERMINAL2 " -title ncmpc -e tmux new \"tmux set-option destroy-unattached on && ncmpcpp\" ';' split -h -d \"tmux resize-pane -R 20; ./.scripts/tools/albumart-ueber.bash\"") },
 	{ MODKEY,			XK_F11,	   spawn,	   SHCMD(TERMINAL " -e newsboat") },
 
 	{ 0, XF86XK_AudioMute,		spawn,		{ .v = mutevol } },
