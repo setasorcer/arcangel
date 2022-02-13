@@ -1,0 +1,88 @@
+:root[uidensity="compact"] {
+	--tab-min-height: 30px !important;
+}
+#back-button,
+#forward-button,
+#page-action-buttons, 
+#tracking-protection-icon-container, 
+#identity-box,
+#new-tab-button,
+#tabs-newtab-button,
+.tab-close-button,
+#scrollbutton-up, 
+#scrollbutton-down {
+  display: none;
+}
+.tab-background {
+	margin: 0 !important;
+}
+#nav-bar {
+  /*margin-top: -32px !important;*/
+  margin-right: 60vw !important;
+}
+#urlbar {
+	top: 2px !important;
+}
+.urlbar-input-box {
+  margin-left: 5px;
+}
+#urlbar-container {
+	--urlbar-container-height: 18px !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+#TabsToolbar {
+  margin-top: -32px;
+  margin-left: 40vw !important;
+  margin-right: 3px;
+  margin-bottom: 0 !important;
+}
+#PanelUI-button {
+  position: fixed;
+  top: 2px;
+  right: 1px;
+}
+.tabbrowswer-tab {
+  max-width: 200px;
+  padding: 0 !important;
+}
+.tabbrowser-tab[first-visible-tab="true"] {
+	padding: 0 !important;
+}
+#alltabs-button {
+  list-style-image: none !important;
+  min-height: 32px !important;
+  max-width: 5px !important;
+}
+
+#contentAreaContextMenu {
+    margin-left: 4px;
+}
+
+/* Contextual toolbar buttons, only show on hover */
+ :root:not([customizing]) #PanelUI-button,
+ :root:not([customizing]) #nav-bar-overflow-button, 
+ :root:not([customizing]) #nav-bar-customization-target toolbarbutton {
+    margin-left: -30px !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+    transition: all 300ms var(--animation-easing-function) !important;
+}
+ :root:not([customizing]) :hover > #PanelUI-button,
+ :root:not([customizing]) :hover > #nav-bar-overflow-button,
+ :root:not([customizing]) :hover > #nav-bar-customization-target toolbarbutton,
+ :root:not([customizing]) #nav-bar-customization-target:focus-within #nav-bar toolbarbutton,
+ :root:not([customizing]) :hover > .titlebar toolbarbutton {
+    margin-left: 0 !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    transition: 300ms !important;
+}
+ toolbarspring {
+    min-width: 8px;
+    max-width: 8px;
+}
+ window:not([chromehidden~="toolbar"]) #urlbar-container > .toolbarbutton-1:-moz-any([disabled], :not([open]):not([disabled]):not(:active)) > .toolbarbutton-icon[class], #main-window:not([customizing]) #back-button[disabled] > .toolbarbutton-icon[class] {
+    box-shadow: none !important;
+    border: 0px !important;
+}n

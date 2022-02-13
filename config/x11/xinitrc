@@ -1,0 +1,20 @@
+#!/bin/sh
+
+slstatus &	# dwm status bar
+mpd &		# music daemon
+urxvtd &	# terminal daemon
+unclutter -b &	# hide mouse after 5 seconds
+xrdb -merge ~/.config/x11/xresources
+hsetroot -cover /home/arili/.pape.png
+
+exec dwm
+
+# personal prefs
+#pipewire &
+#pipewire-pulse &
+#wireplumber &	# pipewire
+#ibus-daemon -drxR
+#xrandr --setmonitor SomeName auto HDMI-A-0,DVI-D-0
+#export _JAVA_AWT_WM_NONREPARENTING=1
+#searx-run &
+#doas alsactl restore
