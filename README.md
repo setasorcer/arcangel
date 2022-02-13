@@ -12,7 +12,7 @@ remember to change my linux username with your username
 
 ![Image](https://files.catbox.moe/0epnns.png)
 
-art by kogecha (RIP)
+art by 焦茶 (RIP)
 
 > troubleshooting
 
