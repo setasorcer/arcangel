@@ -6,6 +6,8 @@ my updated dotfiles using wal.
 
 *see [INFO.md](https://github.com/setasorcer/arcangel/blob/main/INFO.md)*
 
+remember to change my linux username with your username
+
 > screenshot
 
 ![Image](https://files.catbox.moe/0epnns.png)
