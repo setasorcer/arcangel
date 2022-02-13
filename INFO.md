@@ -1,12 +1,12 @@
-**distro** artix/arch
+**distro** artix
 
 **wm** dwm
 
 **browser** waterfox
 
-**music** ncmpcpp *& tmux & ueberzug* `required to show album art`
+**music** ncmpcpp *+ tmux + ueberzug* `required to show album art`
 
-**fm** ranger *& ueberzug & ffmpeg-thumbnailer & atool* `required to extract and view video thumbnails`
+**fm** ranger *+ ueberzug + ffmpeg-thumbnailer & atool* `required to extract and view video thumbnails`
 
 **img view** sxiv *& hsetroot* `used to set wallpaper`
 
