@@ -6,16 +6,16 @@ my updated dotfiles using wal.
 
 > screenshot
 
+![Image](https://files.catbox.moe/0epnns.png)
+
+art by kogecha (RIP)
+
 > installation 4 nubz
 
 > troubleshooting
 
 rtfm
 
-> known issues
-
 > copyright
 
 GPL 2.0
-
-art by kogecha (RIP)
