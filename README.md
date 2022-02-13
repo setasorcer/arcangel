@@ -4,15 +4,13 @@ my updated dotfiles using wal.
 
 > programs
 
-*see [INFO.md]()*
+*see [INFO.md](https://github.com/setasorcer/arcangel/blob/main/INFO.md)*
 
 > screenshot
 
 ![Image](https://files.catbox.moe/0epnns.png)
 
 art by kogecha (RIP)
-
-> installation 4 nubz
 
 > troubleshooting
 
